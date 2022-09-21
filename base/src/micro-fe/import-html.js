@@ -33,10 +33,12 @@ export const importHTML = async (url) => {
         const module = {
             exports: {},
         };
+        // eslint-disable-next-line
         const exports = module.exports;
 
         scripts.forEach((code) => {
             //eval 执行的代码可以访问外部变量
+            // eslint-disable-next-line
             eval(code);
         });
         //获取子应用导出的生命周期函数
