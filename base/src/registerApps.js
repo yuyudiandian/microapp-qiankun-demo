@@ -1,4 +1,4 @@
-import { registerMicroApps, start } from "qiankun";
+import { registerMicroApps, start } from "./micro-fe";
 
 const loader = (loading) => {
     console.log("loading=", loading);
